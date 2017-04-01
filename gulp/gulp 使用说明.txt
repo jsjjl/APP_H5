@@ -27,3 +27,9 @@ git status
 git add -all
 git commit -m "×¢ÊÍÓï¾ä"
 git push
+
+
+gitĞŞ¸Ä²½Öè£º
+git status
+git add .
+git push
