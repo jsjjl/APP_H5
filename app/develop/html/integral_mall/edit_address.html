@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<!--<html manifest="../../app.manifest">-->
+<head>
+<meta charset="utf-8">
+<title>修改收货地址</title>
+<meta name="description" content="">
+<meta name="Keywords" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="format-detection" content="telephone=no,email=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- UC强制全屏 -->
+<meta name="full-screen" content="yes">
+<meta name="browsermode" content="application">
+<!-- QQ强制全屏 -->
+<meta name="x5-orientation" content="portrait">
+<meta name="x5-fullscreen" content="true">
+<meta name="x5-page-mode" content="app">
+
+<!--zepto框架-->
+<script src="../../src/js/zepto.min.js"></script>
+<script src="../../src/js/base.js"></script>
+
+
+<link href="../../src/css/global_m.css" rel="stylesheet">
+<link href="../../src/css/layout_2017.css" rel="stylesheet">
+<link rel="stylesheet" href="../../src/css/plus/swiper.min.css">
+</head>
+
+<body>
+
+<div class="nwrapper">
+
+    <!--顶部-->
+    <div class="nheader">
+        <div class="nindex_back back"><i class="iconfont icon-back"></i></div>
+        <div class="nindex_text">修改收货地址</div>
+    </div>
+    <!--/顶部-->
+    
+    <div class="cont">
+    	
+    	
+    	<!--新增收货地址-->
+    	<div class="add_address">
+    		<p><i class="iconfont icon-wode"></i><span>联系人姓名 :</span><input type="text" class="txt_username"></p>
+    		<p><i class="iconfont icon-phone"></i><span>联系电话 :</span><input type="tel" class="txt_tel" onKeyUp="value=value.replace(/[^\d]/g,'')"></p>
+    		<p><i class="iconfont icon-ditu-copy"></i><span>所在地区 :</span><em id="npost_dizhi"><b class="provinceName"></b><b class="cityName"></b><b class="areaName"></b></em></p>
+    		<p><i class="iconfont icon-ditu-copy"></i><span>详细地址 :</span><input type="text" class="txt_address"></p>
+    		<input type="hidden" class="theDefault">
+    	</div>
+    	
+    	<div class="item_tips">
+              <div class="err_msg"></div>
+        </div>
+
+    	<!--/新增收货地址-->
+    	<a href="javascript:;" class="set_bt bt_no save_address">保存</a>
+    	
+    </div>
+
+<div class="mui-dizhi">
+    
+    <div class="ndz_nav"><span class="active ndz_nav01 ell">请选择</span><span class="ndz_nav02 ell"></span><span class="ndz_nav03 ell"></span></div>
+    
+    <div class="ndz_nav_li">
+<!--
+       	<span>北京</span>
+        <span class="active">江苏</span>
+-->
+       
+    </div>
+    
+    
+</div>
+
+</div>
+
+
+
+
+<!--插件-->
+<script src="../../src/js/plus/zepto.picLazyLoad.min.js"></script>
+<script src="../../src/js/plus/fx.js"></script>
+<script src="../../src/js/plus/swiper.jquery.min.js"></script>
+<script src="../../src/js/plus/ajax.js"></script>
+
+<!--数据-->
+<script src="../../src/js/url.js"></script>
+<script src="../../src/js/native.js"></script>
+
+<script src="../../src/js/http/edit_address.js"></script>
+</body>
+</html>

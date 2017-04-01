@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<!--<html manifest="../../app.manifest">-->
+<head>
+<meta charset="utf-8">
+<title>新闻</title>
+<meta name="description" content="">
+<meta name="Keywords" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="format-detection" content="telephone=no,email=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- UC强制全屏 -->
+<meta name="full-screen" content="yes">
+<meta name="browsermode" content="application">
+<!-- QQ强制全屏 -->
+<meta name="x5-orientation" content="portrait">
+<meta name="x5-fullscreen" content="true">
+<meta name="x5-page-mode" content="app">
+
+<!--zepto框架-->
+<script src="../../src/js/zepto.min.js"></script>
+<script src="../../src/js/base.js"></script>
+
+<script>
+$(document).ready(function(e) {
+	//判断是否app
+	if(GetQueryString("from") == "app"){
+		
+	}
+	//判断是否登录
+	
+	
+	if(GetQueryString("user") == "" || document.URL.indexOf("?") == -1){
+		//window.location.href="login.html";
+	}
+	
+//    if (localStorage.html01) { 
+//		$("#ajax_goodsList").empty().append(localStorage.html01);
+//	}
+	
+});
+</script>
+
+<link href="../../src/css/global_m.css" rel="stylesheet">
+<link href="../../src/css/layout_2017.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+<div class="nwrapper news_nwrapper">
+
+
+    <!--顶部-->
+    <div class="nheader news_nheader">
+        <div class="nindex_back" onClick="back_fun()"><i class="iconfont icon-back"></i></div>
+        <div class="nindex_text news_nindex_text">新闻</div>
+        <div class="news_right">
+		<!--<i class="iconfont icon-yuyin"></i>-->
+        <em id="ajax_time"></em>
+        <!--<i class="iconfont icon-iconset0248"></i>-->
+        </div>
+    </div>
+    <!--/顶部-->
+    
+    <div class="cont">
+    	<div class="news_tab" id="ajax_news_tab"></div>
+    	
+
+
+    	
+
+
+    	
+	<div id="vertical" class="project">
+
+		<div class="mask">
+    
+         
+			<div class="news_li back">
+				<div class="news_limain" id="ajax_news_cont">
+			</div>
+			</div>
+			
+			<div class="news_li front">
+				<div class="news_limain" id="ajax_news_list"></div>
+    		</div>
+    		
+    		
+			 </div>
+
+
+	</div>
+    	
+    	
+    	
+    	<div class="news_bt">
+    		<i class="iconfont icon-yuyuying news_bt_l"></i>
+    		<i class="iconfont icon-xiayiqu- news_bt_r"></i>
+    		<div class="set_bt news_bt_f"><i class="iconfont icon-xinwen"></i><b>新闻内容</b></div>
+    	</div>
+
+    </div>
+
+    
+
+
+</div>
+
+<script type="text/javascript">     
+Date.prototype.format = function (formatStr) {    
+    var date = this;    
+    var zeroize = function (value, length) {    
+        if (!length) {    
+            length = 2;    
+        }    
+        value = new String(value);    
+        for (var i = 0, zeros = ''; i < (length - value.length); i++) {    
+            zeros += '0';    
+        }    
+            return zeros + value;    
+    };    
+    return formatStr.replace(/"[^"]*"|'[^']*'|\b(?:d{1,4}|M{1,4}|yy(?:yy)?|([hHmstT])\1?|[lLZ])\b/g, function($0) {    
+        switch ($0) {    
+            case 'd': return date.getDate();    
+            case 'dd': return zeroize(date.getDate());    
+            case 'ddd': return ['Sun', 'Mon', 'Tue', 'Wed', 'Thr', 'Fri', 'Sat'][date.getDay()];    
+            case 'dddd': return ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][date.getDay()];    
+            case 'M': return date.getMonth() + 1;    
+            case 'MM': return zeroize(date.getMonth() + 1);    
+            case 'MMM': return ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][date.getMonth()];    
+            case 'MMMM': return ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'][date.getMonth()];    
+            case 'yy': return new String(date.getFullYear()).substr(2);    
+            case 'yyyy': return date.getFullYear();    
+            case 'h': return date.getHours() % 12 || 12;    
+            case 'hh': return zeroize(date.getHours() % 12 || 12);    
+            case 'H': return date.getHours();    
+            case 'HH': return zeroize(date.getHours());    
+            case 'm': return date.getMinutes();    
+            case 'mm': return zeroize(date.getMinutes());    
+            case 's': return date.getSeconds();    
+            case 'ss': return zeroize(date.getSeconds());    
+            case 'l': return date.getMilliseconds();    
+            case 'll': return zeroize(date.getMilliseconds());    
+            case 'tt': return date.getHours() < 12 ? 'am' : 'pm';    
+            case 'TT': return date.getHours() < 12 ? 'AM' : 'PM';    
+        }    
+    }); 
+}  
+
+$("#ajax_time").html(new Date().format("hh:mm TT"));
+function get_time(){
+	$("#ajax_time").html(new Date().format("hh:mm TT"));
+};
+setInterval(get_time,1000);
+</script>  
+
+
+<!--插件-->
+<script src="../../src/js/plus/zepto.picLazyLoad.min.js"></script>
+<script src="../../src/js/plus/fx.js"></script>
+<script src="../../src/js/plus/swiper.jquery.min.js"></script>
+<script src="../../src/js/plus/ajax.js"></script>
+
+
+<!--数据-->
+
+
+
+<script src="../../src/js/url.js"></script>
+<script src="../../src/js/native.js"></script>
+
+<script src="../../src/js/http/news.js"></script>
+
+
+</body>
+</html>

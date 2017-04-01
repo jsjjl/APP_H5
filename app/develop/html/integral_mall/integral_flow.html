@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<!--<html manifest="../../app.manifest">-->
+<head>
+<meta charset="utf-8">
+<title>积分流水</title>
+<meta name="description" content="">
+<meta name="Keywords" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="format-detection" content="telephone=no,email=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- UC强制全屏 -->
+<meta name="full-screen" content="yes">
+<meta name="browsermode" content="application">
+<!-- QQ强制全屏 -->
+<meta name="x5-orientation" content="portrait">
+<meta name="x5-fullscreen" content="true">
+<meta name="x5-page-mode" content="app">
+
+<!--zepto框架-->
+<script src="../../src/js/zepto.min.js"></script>
+<script src="../../src/js/base.js"></script>
+
+
+<link href="../../src/css/global_m.css" rel="stylesheet">
+<link href="../../src/css/layout_2017.css" rel="stylesheet">
+<link rel="stylesheet" href="../../src/css/plus/swiper.min.css">
+</head>
+
+<body>
+
+<div class="nwrapper">
+
+    <!--顶部-->
+    <div class="nheader">
+        <div class="nindex_back back"><i class="iconfont icon-back"></i></div>
+        <div class="nindex_text">积分流水</div>
+    </div>
+    <!--/顶部-->
+    
+    <div class="cont one_loading">
+    	<div class="integral_flow_top">剩余 :<em class="g0" id="ajax_integralTotal"></em></div>
+    	<div class="nhr"></div>
+    	<!--列表-->
+		 <div class="tabs">
+		  <a href="#" class="integral_flow_bt1 active"><span>收入</span></a>
+		  <a href="#" class="integral_flow_bt2"> <span>支出</span></a>
+		 </div>
+ 		  
+  		  <div id="tabs-container" class="swiper-container">
+
+					<div class="content-slide"  id="ajax_integralList"></div>
+					<div class="clear"></div>
+			<!--加载中提示-->
+			<img src="../../src/images/default.gif" class="nlist_loading">
+			<!--没有更多提示-->
+			<img src="../../src/images/nomore.jpg" class="nlist_nomore">
+			<!--没有商品提示-->
+			<img src="../../src/images/no_i.jpg" class="nlist_no">
+	
+
+		  </div>
+				
+		  </div>
+   		
+    	<!--/列表-->
+
+    	
+    </div>
+
+
+</div>
+
+
+
+<!--插件-->
+<script src="../../src/js/plus/zepto.picLazyLoad.min.js"></script>
+<script src="../../src/js/plus/fx.js"></script>
+<script src="../../src/js/plus/swiper.jquery.min.js"></script>
+<script src="../../src/js/plus/ajax.js"></script>
+
+<!--数据-->
+
+<script src="../../src/js/url.js"></script>
+<script src="../../src/js/native.js"></script>
+
+<script src="../../src/js/http/integral_flow.js"></script>
+</body>
+</html>

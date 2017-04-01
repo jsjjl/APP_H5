@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<!--<html manifest="../../app.manifest">-->
+<head>
+<meta charset="utf-8">
+<title>积分商城</title>
+<meta name="description" content="">
+<meta name="Keywords" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="format-detection" content="telephone=no,email=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- UC强制全屏 -->
+<meta name="full-screen" content="yes">
+<meta name="browsermode" content="application">
+<!-- QQ强制全屏 -->
+<meta name="x5-orientation" content="portrait">
+<meta name="x5-fullscreen" content="true">
+<meta name="x5-page-mode" content="app">
+
+<!--zepto框架-->
+<script src="../../src/js/zepto.min.js"></script>
+<script src="../../src/js/base.js"></script>
+
+<script>
+$(document).ready(function(e) {
+	//判断是否app
+	if(GetQueryString("from") == "app"){
+		
+	}
+	//判断是否登录
+	if( GetQueryString("user") == null && localStorage.user_phone == null ){
+		window.location.href="login.html";
+	}
+	
+//    if (localStorage.html01 || document.URL.indexOf("?") == -1) { 
+//		$("#ajax_goodsList").empty().append(localStorage.html01);
+//	}
+	
+});
+</script>
+
+<link href="../../src/css/global_m.css" rel="stylesheet">
+<link href="../../src/css/layout_2017.css" rel="stylesheet">
+<link href="../../src/css/plus/swiper.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!--
+<div class="ad">
+	<div class="ad_close">跳过<em>3</em></div>
+	<a href=""><img src="../../src/images/details.jpg"></a>
+</div>
+-->
+
+
+<div class="nwrapper">
+	<div class="ajax_noload"><i class="iconfont icon-wifi g0"></i>网络请求失败，请稍候再试<i class="iconfont icon-shuaxin2 r"></i></div>
+
+    <!--顶部-->
+    <div class="nheader">
+        <div class="nindex_back" onClick="back_fun()"><i class="iconfont icon-back"></i></div>
+        <div class="nindex_text">积分商城</div>
+    </div>
+    <!--/顶部-->
+    
+    <div class="cont one_loading">
+    	
+    	<div class="index_tab">
+    		<a href="integral_flow.html" id="ajax_integralLink"><i class="iconfont icon-jifen"></i><em class="g0"><b id="ajax_myintegral">0</b>积分</em></a>
+    		<a href="exchange_history.html" id="ajax_exchangeLink"><i class="iconfont icon-lishiduihuan"></i><em>兑换历史</em></a>
+    		<a href="integral_rule.html"><i class="iconfont icon-weizhizhuangtai"></i><em>积分规则</em></a>
+    	</div>
+    	
+    	<div class="nhr"></div>
+    	<!--商品列表-->
+    	<div class="index_list_title">好礼兑换</div>
+    	
+    	<div class="index_list" id="ajax_goodsList"></div>
+    	<!--/商品列表-->
+    	
+    		<div class="clear"></div>
+			<!--加载中提示-->
+			<img src="../../src/images/default.gif" class="nlist_loading">
+			<!--没有更多提示-->
+			<img src="../../src/images/nomore.jpg" class="nlist_nomore">
+			<!--没有商品提示-->
+			<img src="../../src/images/no.jpg" class="nlist_no">
+    	
+    	
+    </div>
+
+    
+
+
+</div>
+
+
+
+<!--插件-->
+<script src="../../src/js/plus/zepto.picLazyLoad.min.js"></script>
+<script src="../../src/js/plus/fx.js"></script>
+<script src="../../src/js/plus/swiper.jquery.min.js"></script>
+<script src="../../src/js/plus/ajax.js"></script>
+
+<!--数据-->
+
+
+<script src="../../src/js/url.js"></script>
+<script src="../../src/js/native.js"></script>
+
+<script src="../../src/js/http/index.js"></script>
+
+</body>
+</html>

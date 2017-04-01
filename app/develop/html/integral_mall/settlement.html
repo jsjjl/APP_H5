@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<!--<html manifest="../../app.manifest">-->
+<head>
+<meta charset="utf-8">
+<title>结算</title>
+<meta name="description" content="">
+<meta name="Keywords" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="format-detection" content="telephone=no,email=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- UC强制全屏 -->
+<meta name="full-screen" content="yes">
+<meta name="browsermode" content="application">
+<!-- QQ强制全屏 -->
+<meta name="x5-orientation" content="portrait">
+<meta name="x5-fullscreen" content="true">
+<meta name="x5-page-mode" content="app">
+
+<!--zepto框架-->
+<script src="../../src/js/zepto.min.js"></script>
+<script src="../../src/js/base.js"></script>
+
+<script>
+//重新进入页面刷新
+if (localStorage.getItem('refreshed') !== 'true') {
+	location.reload(); 
+}
+localStorage.setItem('refreshed', 'true');	
+</script>
+
+<link href="../../src/css/global_m.css" rel="stylesheet">
+<link href="../../src/css/layout_2017.css" rel="stylesheet">
+<link rel="stylesheet" href="../../src/css/plus/swiper.min.css">
+</head>
+
+<body>
+
+<div class="nwrapper"  onload="opener.location.reload()">
+
+    <!--顶部-->
+    <div class="nheader">
+        <div class="nindex_back back"><i class="iconfont icon-back"></i></div>
+        <div class="nindex_text">结算</div>
+    </div>
+    <!--/顶部-->
+    
+    <div class="cont" id="ajax_user_msg">
+    	
+    	<div class="set_top" id="ajax_goods_select">
+    		
+    	</div>
+    	<div class="nhr"></div>
+    	
+    	<div class="index_list_title">我的收货地址</div>
+    	
+    	<!--收货地址-->
+<!--
+    	<div class="set_list">
+    		<i class="iconfont icon-ditu-copy"></i>	
+   			<p>路飞<em>18900010003</em>
+   			<span>江苏省扬州市邗江区<br/>扬子江中路186号智谷科技A座</span>
+   			</p>
+   			<a href="address_list.html"><i class="iconfont icon-jiantou"></i></a>
+   		</div>
+-->
+    	<!--/收货地址-->
+    	
+    	
+<!--		<div class="set_virtual">虚拟物品无需收货地址，下单后请注意查收兑换码！</div>-->
+    	
+    	<!--<a href="add_address.html" class="set_bt">添加收货地址</a>-->
+<!--    	<a href="javascript:;" class="set_bt order_submit">订单提交</a>-->
+    	
+    </div>
+
+
+</div>
+	
+	<div class="submit" id="submit_1"><img src="../../src/images/submit_box.png" class="vh">
+		<div class="submit_box">
+			<span id="yzm">DXi2aW3d</span>
+			<p>请一个月内至爱奇艺官网或APP中兑换</p>
+			<em class="submit_close submit_copy"  data-clipboard-action="copy" data-clipboard-target="#yzm">确定并复制验证码</em>
+		</div>
+	</div>
+	
+	
+	<div class="submit" id="submit_2"><img src="../../src/images/submit_box.png" class="vh">
+		<div class="submit_box">
+			<span>订单已经生成</span>
+			<p>可至兑换历史中查看</p>
+			<em class="submit_close">确定</em>
+		</div>
+	</div>
+
+
+<!--<div class="cover-decision"></div>-->
+	
+<!--插件-->
+<script src="../../src/js/plus/clipboard.min.js"></script>
+
+<script src="../../src/js/plus/zepto.picLazyLoad.min.js"></script>
+<script src="../../src/js/plus/fx.js"></script>
+<script src="../../src/js/plus/swiper.jquery.min.js"></script>
+<script src="../../src/js/plus/ajax.js"></script>
+
+
+<!--数据-->
+
+<script src="../../src/js/url.js"></script>
+<script src="../../src/js/native.js"></script>
+
+<script src="../../src/js/http/settlement.js"></script>
+
+</body>
+</html>
