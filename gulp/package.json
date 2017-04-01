@@ -1,0 +1,66 @@
+{
+  "name": "gulp-demo",
+  "version": "0.0.4",
+  "description": "Using gulp build a project instance. Link: https://github.com/nimojs/gulp-book/blob/master/chapter7.md",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-cache": "^0.4.6",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-declare": "^0.3.0",
+    "gulp-handlebars": "^4.0.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-less": "^3.3.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-px2rem": "^1.0.11",
+    "gulp-px2rem-plugin": "^0.4.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-retina-sprites": "^0.0.3",
+    "gulp-rev": "^7.1.2",
+    "gulp-rev-collector": "^1.1.1",
+    "gulp-ruby-sass": "^1.4.0",
+    "gulp-sourcemaps": "^1.11.1",
+    "gulp-uglify": "^1.5.4",
+    "gulp-useref": "^3.1.2",
+    "gulp-util": "^3.0.8",
+    "gulp-watch-path": "^0.1.0",
+    "gulp-wrap": "^0.11.0",
+    "gulp.spritesmith": "^6.4.0",
+    "imagemin-optipng": "^5.2.1",
+    "imagemin-pngquant": "^5.0.0",
+    "lazypipe": "^1.0.1",
+    "run-sequence": "^1.2.2",
+    "stream-combiner2": "^1.1.1",
+    "vinyl-paths": "^2.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nimojs/gulp-demo"
+  },
+  "keywords": [
+    "gulpplugin",
+    "gulp-book",
+    "gulp"
+  ],
+  "author": "nimojs <nimo.jser@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nimojs/gulp-demo/issues"
+  },
+  "homepage": "https://github.com/nimojs/gulp-demo",
+  "dependencies": {
+    "handlebars": "^3.0.1"
+  }
+}

@@ -1,0 +1,18 @@
+CMD进入目录执行   cd /d D:\MAMP\htdocs\html5\gulp
+
+
+编译less和实时刷新浏览器的开发环境执行 gulp
+
+
+
+打包编辑执行 gulp build
+全局替换：
+<html>   <html manifest="../../app.manifest">
+<script src="../../src/js/zepto.min.js"></script><script src="../../src/js/base.js"></script>     <script src="../../src/js/base.min.js"></script>
+
+<link href="../../src/css/global_m.css" rel="stylesheet"><link href="../../src/css/layout_2017.css" rel="stylesheet">    <link href="../../src/css/style.min.css" rel="stylesheet">
+
+
+<script src="../../src/js/plus/zepto.picLazyLoad.min.js"></script><script src="../../src/js/plus/fx.js"></script><script src="../../src/js/plus/swiper.jquery.min.js"></script><script src="../../src/js/plus/ajax.js"></script><script src="../../src/js/url.js"></script><script src="../../src/js/native.js"></script>                         <script src="../../src/js/native.min.js"></script>
+
+最后修改release文件夹下面的app.manifest文件版本号
