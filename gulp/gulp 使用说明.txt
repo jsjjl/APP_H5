@@ -16,3 +16,14 @@ CMD进入目录执行   cd /d D:\MAMP\htdocs\html5\gulp
 <script src="../../src/js/plus/zepto.picLazyLoad.min.js"></script><script src="../../src/js/plus/fx.js"></script><script src="../../src/js/plus/swiper.jquery.min.js"></script><script src="../../src/js/plus/ajax.js"></script><script src="../../src/js/url.js"></script><script src="../../src/js/native.js"></script>                         <script src="../../src/js/native.min.js"></script>
 
 最后修改release文件夹下面的app.manifest文件版本号
+
+
+
+git发布步骤：
+cd到目录
+git clone 仓库地址
+文件拷贝
+git status
+git add -all
+git commit -m "注释语句"
+git push
