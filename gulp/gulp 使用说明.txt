@@ -29,7 +29,7 @@ git commit -m "注释语句"
 git push
 
 
-git修改步骤：
+git的修改步骤：
 git status
 git add .
 git push
