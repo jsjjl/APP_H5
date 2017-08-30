@@ -32,4 +32,5 @@ git push
 gitµÄĞŞ¸Ä²½Öè£º
 git status
 git add .
+git commit -m "×¢ÊÍÓï¾ä"
 git push
